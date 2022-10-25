@@ -1,6 +1,10 @@
+// import modules 
+let inquirer = require('inquirer');
+let fs = require('fs');
 // TODO: Include packages needed for this application
 
-const { default: inquirer } = require("inquirer");
+
+const { default: inquirer, default: inquirer } = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
