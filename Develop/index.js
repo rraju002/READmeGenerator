@@ -74,4 +74,14 @@ async function init() {
 }
 
 // Function call to initialize app
-init();
+async function init() {
+    const responses = await inquirer.prompt(questions);
+        let readMeFile = generateMarkdown(responses);
+
+        fs.writeFile('GENERATEDREADME.md', readMeFile, (err) => {
+            err ? console.log(err) : console.log('Read Me File Created!');
+        })
+    }
+    
+    // Function call to initialize app
+    init();
