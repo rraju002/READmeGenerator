@@ -3,8 +3,6 @@ let inquirer = require('inquirer');
 let fs = require('fs');
 // TODO: Include packages needed for this application
 
-
-const { default: inquirer, default: inquirer } = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -73,7 +71,7 @@ async function init() {
     })
 }
 
-// Function call to initialize app
+// Create a function to initialize app
 async function init() {
     const responses = await inquirer.prompt(questions);
         let readMeFile = generateMarkdown(responses);
